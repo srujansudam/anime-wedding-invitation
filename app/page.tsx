@@ -1,10 +1,13 @@
+"use client";
+
 import FloatingPetals from "@/components/FloatingPetals";
+import LoveStory from "@/components/LoveStory";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0F172A] text-[#F9FAFB]">
-      <main className="min-h-screen bg-[#0F172A] text-[#F9FAFB]"></main>
-        <FloatingPetals />
+      <FloatingPetals />
+
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20">
         <img
           src="/images/hero-couple.jpg"
@@ -41,11 +44,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="story" className="px-6 py-24 text-center">
-        <p className="font-romantic text-3xl text-[#CBD5E1]">
-          The story section comes next.
-        </p>
-      </section>
+      <LoveStory />
     </main>
   );
 }
