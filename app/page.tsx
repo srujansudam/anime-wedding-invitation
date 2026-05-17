@@ -3,6 +3,7 @@
 import FloatingPetals from "@/components/FloatingPetals";
 import LoveStory from "@/components/LoveStory";
 import WeddingDetails from "@/components/WeddingDetails";
+import Ending from "@/components/Ending";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
 
       <LoveStory />
       <WeddingDetails />
+      <Ending />
     </main>
   );
 }
