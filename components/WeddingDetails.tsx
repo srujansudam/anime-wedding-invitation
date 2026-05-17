@@ -1,10 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CalendarDays, Clock, MapPin, Utensils } from "lucide-react";
+import { CalendarDays, CalendarPlus, Clock, MapPin, Utensils } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const weddingDate = new Date("2026-07-03T20:19:00+05:30").getTime();
+const mapUrl =
+  "https://www.google.com/maps/place//data=!4m2!3m1!1s0x3a33456a4b397ecb:0x3b6e7830102c7e4?sa=X&ved=1t:8290&ictx=111";
+
+const calendarUrl =
+  "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Srujan%20%26%20Lakshmi%20Priyanka%20Wedding&dates=20260703T133000Z/20260703T170000Z&details=Wedding%20of%20Srujan%20and%20Lakshmi%20Priyanka.%20Dinner%20starts%20from%207%3A00%20PM%20and%20Muhurtham%20is%20at%208%3A19%20PM.&location=Kodam%20Convention%2C%20Hunter%20Road%2C%20Warangal";
 
 const detailCards = [
   {
@@ -169,14 +174,27 @@ export default function WeddingDetails() {
           })}
         </div>
 
+        <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
         <a
-          href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3a33456a4b397ecb:0x3b6e7830102c7e4?sa=X&ved=1t:8290&ictx=111"
-          target="_blank"
-          rel="noreferrer"
-          className="mt-5 inline-flex w-full justify-center rounded-full border border-[#F5D48F]/40 bg-[#F5D48F] px-7 py-3 text-xs uppercase tracking-[0.22em] text-[#0F172A] transition hover:bg-[#F4C2C2] md:text-sm"
+            href={mapUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-[#F5D48F]/40 bg-[#F5D48F] px-5 py-3 text-xs uppercase tracking-[0.18em] text-[#0F172A] transition hover:bg-[#F4C2C2] md:text-sm"
         >
-          Open Map
+            <MapPin className="h-4 w-4" />
+            Open Map
         </a>
+
+        <a
+            href={calendarUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-[#F5D48F]/35 bg-[#111827]/65 px-5 py-3 text-xs uppercase tracking-[0.18em] text-[#F5D48F] backdrop-blur-md transition hover:bg-[#F5D48F] hover:text-[#0F172A] md:text-sm"
+        >
+            <CalendarPlus className="h-4 w-4" />
+            Add to Calendar
+        </a>
+        </div>
 
         
       </motion.div>
