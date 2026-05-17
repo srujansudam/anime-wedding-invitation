@@ -1,6 +1,10 @@
+import FloatingPetals from "@/components/FloatingPetals";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0F172A] text-[#F9FAFB]">
+      <main className="min-h-screen bg-[#0F172A] text-[#F9FAFB]"></main>
+        <FloatingPetals />
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20">
         <img
           src="/images/hero-couple.jpg"
