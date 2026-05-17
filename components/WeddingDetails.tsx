@@ -96,7 +96,7 @@ export default function WeddingDetails() {
 
           <p className="font-romantic mt-6 text-2xl leading-relaxed text-[#CBD5E1]">
             Together with our families, we invite you to celebrate the wedding of
-            Srujan and Lakshmi Priyanka.
+            Lakshmi Priyanka and Srujan.
           </p>
         </motion.div>
 

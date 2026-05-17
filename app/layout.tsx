@@ -19,8 +19,34 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Wedding Invitation",
-  description: "A cinematic wedding invitation experience",
+  metadataBase: new URL("https://anime-wedding-invitation.vercel.app"),
+  title: "Srujan & Lakshmi Priyanka | Wedding Invitation",
+  description:
+    "With love, blessings, and the promise of forever, we invite you to celebrate the wedding of Srujan and Lakshmi Priyanka on 03 July 2026 in Warangal.",
+  openGraph: {
+    title: "Srujan & Lakshmi Priyanka | Wedding Invitation",
+    description:
+      "Join us as we begin our next chapter together on 03 July 2026 in Warangal.",
+    url: "https://anime-wedding-invitation.vercel.app",
+    siteName: "Srujan & Lakshmi Priyanka Wedding Invitation",
+    images: [
+      {
+        url: "/images/hero-couple.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Srujan and Lakshmi Priyanka wedding invitation",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Srujan & Lakshmi Priyanka | Wedding Invitation",
+    description:
+      "Join us as we begin our next chapter together on 03 July 2026 in Warangal.",
+    images: ["/images/hero-couple.jpg"],
+  },
 };
 
 export default function RootLayout({

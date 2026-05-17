@@ -12,8 +12,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0F172A] text-[#F9FAFB]">
       <FloatingPetals />
-      <FloatingNav />
-
+      
       <section
         id="home"
         className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-24"
@@ -34,9 +33,9 @@ export default function Home() {
           </p>
 
           <h1 className="font-display text-5xl leading-tight text-[#F9FAFB] md:text-8xl">
-            Srujan
-            <span className="block text-[#F5D48F]">&</span>
             Lakshmi Priyanka
+            <span className="block text-[#F5D48F]">&</span>
+            Srujan
           </h1>
 
           <p className="font-romantic mx-auto mt-8 max-w-2xl text-2xl leading-relaxed text-[#CBD5E1] md:text-3xl">
@@ -51,13 +50,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="#story"
-              className="inline-flex rounded-full border border-[#F5D48F]/40 bg-[#111827]/50 px-8 py-3 text-sm uppercase tracking-[0.25em] text-[#F5D48F] backdrop-blur-md transition hover:bg-[#F5D48F] hover:text-[#0F172A]"
-            >
-              Enter Our Story
-            </a>
-
+            
             <a
               href="#details"
               className="inline-flex rounded-full border border-[#F4C2C2]/30 bg-[#0F172A]/35 px-8 py-3 text-sm uppercase tracking-[0.25em] text-[#F9FAFB] backdrop-blur-md transition hover:bg-[#F4C2C2] hover:text-[#0F172A]"
@@ -68,7 +61,6 @@ export default function Home() {
         </div>
       </section>
 
-      <CinematicDivider label="Our Story" />
       <LoveStory />
 
       <CinematicDivider label="The Wedding" />

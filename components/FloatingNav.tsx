@@ -16,10 +16,15 @@ export default function FloatingNav() {
             <a
               key={item.href}
               href={item.href}
+              aria-label={item.label}
               className="flex-1 rounded-full px-3 py-2 text-center text-[10px] uppercase tracking-[0.16em] text-[#CBD5E1] transition hover:bg-[#F5D48F]/15 hover:text-[#F5D48F] md:flex-none md:px-4 md:text-[11px] md:tracking-[0.22em]"
             >
-              <span className="md:hidden">{item.shortLabel}</span>
-              <span className="hidden md:inline">{item.label}</span>
+              <span aria-hidden="true" className="md:hidden">
+                {item.shortLabel}
+            </span>
+            <span aria-hidden="true" className="hidden md:inline">
+                {item.label}
+            </span>
             </a>
           ))}
         </div>

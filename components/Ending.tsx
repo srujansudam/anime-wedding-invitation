@@ -46,7 +46,7 @@ export default function Ending() {
         <div className="mt-9 h-px w-full bg-gradient-to-r from-transparent via-[#F5D48F]/50 to-transparent" />
 
         <p className="font-display mt-9 text-4xl text-[#F5D48F]">
-          Srujan & Lakshmi Priyanka
+          Lakshmi Priyanka & Srujan
         </p>
 
         <p className="mt-4 text-sm uppercase tracking-[0.26em] text-[#CBD5E1]">
