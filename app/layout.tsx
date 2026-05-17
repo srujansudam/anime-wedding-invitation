@@ -20,32 +20,39 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://srujan-and-priyanka.vercel.app"),
-  title: "Srujan & Lakshmi Priyanka | Wedding Invitation",
+  title: "Srujan and Priyanka",
   description:
-    "With love, blessings, and the promise of forever, we invite you to celebrate the wedding of Srujan and Lakshmi Priyanka on 03 July 2026 in Warangal.",
+    "Srujan and Lakshmi Priyanka are getting married on 03 July 2026 in Warangal. We would love to have your blessings.",
+
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
+
   openGraph: {
-    title: "Srujan & Lakshmi Priyanka | Wedding Invitation",
+    title: "Srujan and Priyanka",
     description:
-      "Join us as we begin our next chapter together on 03 July 2026 in Warangal.",
+      "Srujan and Lakshmi Priyanka are getting married on 03 July 2026 in Warangal. We would love to have your blessings.",
     url: "https://srujan-and-priyanka.vercel.app",
-    siteName: "Srujan & Lakshmi Priyanka Wedding Invitation",
+    siteName: "Srujan and Priyanka",
     images: [
       {
-        url: "/images/hero-couple.jpg",
+        url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Srujan and Lakshmi Priyanka wedding invitation",
+        alt: "Srujan and Priyanka wedding invitation",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Srujan & Lakshmi Priyanka | Wedding Invitation",
+    title: "Srujan and Priyanka",
     description:
-      "Join us as we begin our next chapter together on 03 July 2026 in Warangal.",
-    images: ["/images/hero-couple.jpg"],
+      "Srujan and Lakshmi Priyanka are getting married on 03 July 2026 in Warangal. We would love to have your blessings.",
+    images: ["/opengraph-image.jpg"],
   },
 };
 
