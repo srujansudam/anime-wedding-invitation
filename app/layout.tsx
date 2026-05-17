@@ -19,7 +19,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://anime-wedding-invitation.vercel.app"),
+  metadataBase: new URL("https://srujan-and-priyanka.vercel.app"),
   title: "Srujan & Lakshmi Priyanka | Wedding Invitation",
   description:
     "With love, blessings, and the promise of forever, we invite you to celebrate the wedding of Srujan and Lakshmi Priyanka on 03 July 2026 in Warangal.",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Srujan & Lakshmi Priyanka | Wedding Invitation",
     description:
       "Join us as we begin our next chapter together on 03 July 2026 in Warangal.",
-    url: "https://anime-wedding-invitation.vercel.app",
+    url: "https://srujan-and-priyanka.vercel.app",
     siteName: "Srujan & Lakshmi Priyanka Wedding Invitation",
     images: [
       {
