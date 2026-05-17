@@ -4,13 +4,18 @@ import FloatingPetals from "@/components/FloatingPetals";
 import LoveStory from "@/components/LoveStory";
 import WeddingDetails from "@/components/WeddingDetails";
 import Ending from "@/components/Ending";
+import FloatingNav from "@/components/FloatingNav";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0F172A] text-[#F9FAFB]">
       <FloatingPetals />
+      <FloatingNav />
 
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20">
+      <section
+        id="home"
+        className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20"
+      >
         <img
           src="/images/hero-couple.jpg"
           alt="Wedding hero"

@@ -5,7 +5,10 @@ import { Heart } from "lucide-react";
 
 export default function Ending() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-24 md:justify-end md:px-16 lg:px-24">
+    <section
+        id="blessings"
+        className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-24 md:justify-end md:px-16 lg:px-24"
+    >
       <img
         src="/images/ending-wide.jpg"
         alt="Final cinematic ending"
