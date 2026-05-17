@@ -2,6 +2,7 @@
 
 import FloatingPetals from "@/components/FloatingPetals";
 import LoveStory from "@/components/LoveStory";
+import WeddingDetails from "@/components/WeddingDetails";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
           <h1 className="font-display text-6xl leading-tight text-[#F9FAFB] md:text-8xl">
             Srujan
             <span className="block text-[#F5D48F]">&</span>
-            Bride Name
+            Lakshmi Priyanka
           </h1>
 
           <p className="font-romantic mt-8 text-2xl leading-relaxed text-[#CBD5E1] md:text-3xl">
@@ -45,6 +46,7 @@ export default function Home() {
       </section>
 
       <LoveStory />
+      <WeddingDetails />
     </main>
   );
 }
