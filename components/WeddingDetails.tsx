@@ -56,7 +56,12 @@ function getTimeLeft() {
 }
 
 export default function WeddingDetails() {
-  const [timeLeft, setTimeLeft] = useState(getTimeLeft());
+  const [timeLeft, setTimeLeft] = useState({
+    days: "--",
+    hours: "--",
+    minutes: "--",
+    seconds: "--",
+  });
 
   useEffect(() => {
     const timer = setInterval(() => {

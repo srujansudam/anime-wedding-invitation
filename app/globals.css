@@ -62,3 +62,17 @@ body {
     0 0 32px rgba(245, 212, 143, 0.18),
     0 0 80px rgba(244, 194, 194, 0.12);
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 4rem;
+  }
+}
+
+img {
+  user-select: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}

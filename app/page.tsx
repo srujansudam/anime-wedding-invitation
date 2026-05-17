@@ -5,6 +5,8 @@ import FloatingNav from "@/components/FloatingNav";
 import LoveStory from "@/components/LoveStory";
 import WeddingDetails from "@/components/WeddingDetails";
 import Ending from "@/components/Ending";
+import CinematicDivider from "@/components/CinematicDivider";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +26,7 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/75 via-[#0F172A]/42 to-[#020617]/95" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245,212,143,0.20),transparent_38rem)]" />
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0F172A] to-transparent" />
 
         <div className="relative z-10 mx-auto max-w-4xl text-center">
           <p className="mb-5 text-xs uppercase tracking-[0.45em] text-[#F5D48F]">
@@ -65,9 +68,16 @@ export default function Home() {
         </div>
       </section>
 
+      <CinematicDivider label="Our Story" />
       <LoveStory />
+
+      <CinematicDivider label="The Wedding" />
       <WeddingDetails />
+
+      <CinematicDivider label="Blessings" />
       <Ending />
+
+      <Footer />
     </main>
   );
 }
