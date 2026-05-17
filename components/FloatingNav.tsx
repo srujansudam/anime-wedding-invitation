@@ -4,7 +4,6 @@ const navItems = [
   { label: "Home", shortLabel: "Home", href: "#home" },
   { label: "Story", shortLabel: "Story", href: "#story" },
   { label: "Details", shortLabel: "Details", href: "#details" },
-  { label: "Blessings", shortLabel: "End", href: "#blessings" },
 ];
 
 export default function FloatingNav() {
@@ -21,10 +20,10 @@ export default function FloatingNav() {
             >
               <span aria-hidden="true" className="md:hidden">
                 {item.shortLabel}
-            </span>
-            <span aria-hidden="true" className="hidden md:inline">
+              </span>
+              <span aria-hidden="true" className="hidden md:inline">
                 {item.label}
-            </span>
+              </span>
             </a>
           ))}
         </div>

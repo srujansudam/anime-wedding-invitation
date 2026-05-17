@@ -1,10 +1,8 @@
 "use client";
 
 import FloatingPetals from "@/components/FloatingPetals";
-import FloatingNav from "@/components/FloatingNav";
 import LoveStory from "@/components/LoveStory";
 import WeddingDetails from "@/components/WeddingDetails";
-import Ending from "@/components/Ending";
 import CinematicDivider from "@/components/CinematicDivider";
 import Footer from "@/components/Footer";
 
@@ -49,25 +47,12 @@ export default function Home() {
             <span>Warangal</span>
           </div>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            
-            <a
-              href="#details"
-              className="inline-flex rounded-full border border-[#F4C2C2]/30 bg-[#0F172A]/35 px-8 py-3 text-sm uppercase tracking-[0.25em] text-[#F9FAFB] backdrop-blur-md transition hover:bg-[#F4C2C2] hover:text-[#0F172A]"
-            >
-              Wedding Details
-            </a>
-          </div>
         </div>
       </section>
 
       <LoveStory />
 
-      <CinematicDivider label="The Wedding" />
-      <WeddingDetails />
-
-      <CinematicDivider label="Blessings" />
-      <Ending />
+      <WeddingDetails />   
 
       <Footer />
     </main>
